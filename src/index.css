@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --primary-color: #0d1117; /* Deep professional slate/black */
-  --secondary-color: #2b313c;
-  --accent-color: #ffcc00; /* MTN MoMo Yellow for CTAs */
-  --accent-hover: #e6b800;
-  --bg-color: #f7f9fc;
-  --card-bg: #ffffff;
-  --text-main: #1a1a1a;
-  --text-light: #666666;
-  --border-color: #e1e4e8;
-  --success-color: #28a745;
+  --primary-color: #185A46; /* Dark Green from Hero/Nav */
+  --secondary-color: #1F6F55;
+  --accent-color: #6BEBBE; /* Neon Green accent */
+  --accent-hover: #55D4A5;
+  --bg-color: #2C2C2C; /* Dark grey body */
+  --card-bg: #333333; /* Slightly lighter for cards */
+  --text-main: #FFFFFF;
+  --text-light: #A1A1A1;
+  --border-color: #444444;
+  --success-color: #6BEBBE;
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -85,13 +85,13 @@ img {
 
 .btn-outline {
   background-color: transparent;
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
 }
 
 .btn-outline:hover {
-  background-color: var(--primary-color);
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: #1a1a1a;
 }
 
 /* Base layouts */
@@ -113,7 +113,7 @@ img {
 .align-center { align-items: center; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-color);
+  color: var(--text-main);
   font-weight: 700;
   margin-bottom: 1rem;
 }

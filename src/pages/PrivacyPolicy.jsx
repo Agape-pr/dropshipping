@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
       <div className="policy-content">
         <h2>1. Information We Collect</h2>
         <p>
-          At KigaliGlobal Dropshipping, we collect information that you voluntarily provide to us when you
+          At isooko, we collect information that you voluntarily provide to us when you
           register on our website, place an order, or subscribe to our newsletter. This includes:
         </p>
         <ul>
@@ -46,7 +46,7 @@ const PrivacyPolicy = () => {
 
         <h2>4. Data Retention</h2>
         <p>
-          KigaliGlobal Dropshipping will retain your Personal Data only for as long as is necessary for the purposes 
+          isooko will retain your Personal Data only for as long as is necessary for the purposes 
           set out in this Privacy Policy.
         </p>
 
@@ -67,7 +67,7 @@ const PrivacyPolicy = () => {
         <p>
           If you have any questions about this Privacy Policy, please contact us:
           <br/>
-          <strong>Email:</strong> support@kigaliglobal.rw <br/>
+          <strong>Email:</strong> support@isooko.rw <br/>
           <strong>Phone:</strong> +250 788 123 456
         </p>
       </div>

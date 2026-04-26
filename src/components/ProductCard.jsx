@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ShoppingCart, LogIn } from 'lucide-react';
+import { Plus } from 'lucide-react';
 import { CartContext } from '../context/CartContext';
 import './ProductCard.css';
 
@@ -23,39 +23,29 @@ const ProductCard = ({ product }) => {
   return (
     <div className="product-card" onClick={() => navigate(`/product/${product.id}`)}>
       <div className="product-image-container">
-        <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
-        <div className="delivery-badge">{product.delivery}</div>
+        {product.image ? (
+          <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
+        ) : (
+          <div className="product-placeholder"></div>
+        )}
       </div>
       
       <div className="product-info">
-        <span className="product-category-label">
-          {product.category.replace('-', ' ').toUpperCase()}
-        </span>
+        <div className="product-badge">Hot</div>
         <h3 className="product-title">{product.name}</h3>
         
         <div className="product-price-row">
-          <span className="price">{formattedPrice}</span>
-        </div>
-        
-        <div className="product-actions">
+          <div>
+            <span className="price">{formattedPrice}</span>
+            <span className="old-price">RWF {(product.price * 1.5).toLocaleString()}</span>
+          </div>
           <button 
-            className="btn btn-primary add-to-cart-btn" 
+            className="add-btn-circle" 
             onClick={handleAddToCart}
             aria-label="Add to cart"
           >
-            <ShoppingCart size={18} /> Add
+            <Plus size={20} />
           </button>
-          
-          <Link 
-            to={`/checkout`} 
-            className="btn btn-secondary buy-now-btn"
-            onClick={(e) => {
-              e.stopPropagation();
-              addToCart(product);
-            }}
-          >
-            Buy Now
-          </Link>
         </div>
       </div>
     </div>

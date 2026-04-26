@@ -12,6 +12,7 @@ import Checkout from './pages/Checkout';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import RefundPolicy from './pages/RefundPolicy';
+import ForBusiness from './pages/ForBusiness';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfService />} />
             <Route path="/refund" element={<RefundPolicy />} />
+            <Route path="/for-business" element={<ForBusiness />} />
           </Routes>
         </main>
         <Footer />

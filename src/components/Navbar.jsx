@@ -25,7 +25,7 @@ const Navbar = () => {
           <Link to="/" onClick={toggleMenu}>Shop</Link>
           <a href="/#categories" onClick={toggleMenu}>Categories</a>
           <a href="#" onClick={toggleMenu}>Track order</a>
-          <a href="#" onClick={toggleMenu}>For businesses</a>
+          <Link to="/for-business" onClick={toggleMenu}>For businesses</Link>
         </nav>
 
         <div className="nav-right">

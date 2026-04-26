@@ -12,7 +12,7 @@ const RefundPolicy = () => {
       <div className="policy-content">
         <h2>1. Overview</h2>
         <p>
-          At KigaliGlobal Dropshipping, our priority is providing you high-quality products sourced directly 
+          At isooko, our priority is providing you high-quality products sourced directly 
           from China to Kigali. Because we operate as a dropshipping service, our refund policy follows 
           specific guidelines aligned with international shipping and supplier terms.
         </p>

@@ -224,150 +224,9 @@
   gap: 2rem;
 }
 
-/* NEW STYLES for isookolift redesign */
-.hero {
-  background: var(--primary-color);
-  color: white;
-  padding: 4rem 0 6rem 0;
-}
-
-.hero-badge {
-  display: inline-block;
-  background-color: var(--secondary-color);
-  color: var(--accent-color);
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-}
-
-.hero-title {
-  color: white;
-  font-size: 3.5rem;
-}
-
-.highlight-text {
-  color: var(--accent-color);
-  font-weight: 400;
-}
-
-.hero-subtitle {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.hero-stats-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  padding: 2rem;
-  width: 100%;
-  max-width: 400px;
-}
-
-.stats-title {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 1rem;
-}
-
-.stats-grid {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.stat-item h3 {
-  font-size: 2rem;
-  color: white;
-  margin: 0;
-}
-
-.stat-item p {
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.stats-footer {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 12px 16px;
-  border-radius: 8px;
-  font-size: 0.85rem;
-}
-
-.pulse-dot {
-  width: 8px;
-  height: 8px;
-  background-color: var(--accent-color);
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(107, 235, 190, 0.2);
-}
-
-.trust-section {
-  background-color: #1a1a1a;
-  border-bottom: 1px solid #333;
-  padding: 1.5rem 0;
-  color: white;
-}
-
-.trust-item {
-  color: white;
-  font-size: 0.9rem;
-}
-
-.trust-icon {
-  color: white;
-  background: rgba(255,255,255,0.2);
-  border-radius: 50%;
-}
-
-.categories-grid-new {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  padding-bottom: 1rem;
-}
-
-.category-card-new {
-  min-width: 140px;
-  background-color: #222;
-  border: 1px solid #333;
-  border-radius: 12px;
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.category-card-new h3 {
-  color: white;
-  font-size: 1rem;
-  margin: 0;
-}
-
-.category-card-new p {
-  font-size: 0.8rem;
-  color: #888;
-}
-
-.category-card-new.active {
-  background-color: #E8F8F5;
-  border-color: #E8F8F5;
-}
-
-.category-card-new.active h3, .category-card-new.active p, .category-card-new.active .cat-icon {
-  color: #185A46;
-}
-
+/* Entrepreneur Banner */
 .entrepreneur-banner {
-  background: linear-gradient(to right, #0F4C81, #185A46);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   border-radius: 16px;
   padding: 2.5rem;
   display: flex;
@@ -378,11 +237,12 @@
 }
 
 .badge-blue {
-  background: #3498db;
-  color: white;
+  background: var(--accent-color);
+  color: #1a1a1a;
   padding: 4px 12px;
   border-radius: 20px;
   font-size: 0.8rem;
+  font-weight: 600;
   display: inline-block;
   margin-bottom: 1rem;
 }
@@ -397,9 +257,9 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
+/* Payment Methods */
 .payment-title {
-  color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
@@ -410,15 +270,15 @@
 }
 
 .payment-card {
-  background: #222;
-  border: 1px solid #333;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
   padding: 10px 16px;
   border-radius: 8px;
   display: flex;
   align-items: center;
   gap: 10px;
-  color: white;
   font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .dot {

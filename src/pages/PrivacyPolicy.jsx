@@ -67,7 +67,7 @@ const PrivacyPolicy = () => {
         <p>
           If you have any questions about this Privacy Policy, please contact us:
           <br/>
-          <strong>Email:</strong> support@isooko.rw <br/>
+          <strong>Email:</strong> support@kigaliglobal.rw <br/>
           <strong>Phone:</strong> +250 788 123 456
         </p>
       </div>

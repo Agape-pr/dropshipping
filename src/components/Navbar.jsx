@@ -13,7 +13,8 @@ const Navbar = () => {
       <div className="container navbar">
         <div className="nav-left">
           <Link to="/" className="logo">
-            <span className="logo-text">isooko<span className="highlight" style={{color: 'var(--accent-color)'}}>lift</span></span>
+            <Globe className="logo-icon" size={28} />
+            <span className="logo-text">isooko</span>
           </Link>
         </div>
 
@@ -26,10 +27,9 @@ const Navbar = () => {
 
         <div className="nav-right">
           <Link to="/checkout" className="cart-link" aria-label="Cart">
-            <ShoppingCart size={20} />
-            <span style={{marginLeft: '8px', fontSize: '14px'}}>Cart ({cartCount})</span>
+            <ShoppingCart size={24} />
+            {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
           </Link>
-          <button className="btn btn-outline" style={{padding: '8px 16px', marginLeft: '16px', borderColor: 'rgba(255,255,255,0.2)', color: 'white'}}>Sign in</button>
           <button className="mobile-menu-btn" aria-label="Menu">
             <Menu size={24} />
           </button>

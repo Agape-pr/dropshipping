@@ -1,12 +1,15 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingCart, Menu, Globe } from 'lucide-react';
+import { ShoppingCart, Menu, X, Globe } from 'lucide-react';
 import { CartContext } from '../context/CartContext';
 import './Navbar.css';
 
 const Navbar = () => {
   const { getCartCount } = useContext(CartContext);
   const cartCount = getCartCount();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
     <header className="navbar-container">
@@ -18,11 +21,11 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <nav className="nav-links">
-          <Link to="/">Shop</Link>
-          <a href="/#categories">Categories</a>
-          <a href="#">Track order</a>
-          <a href="#">For businesses</a>
+        <nav className={`nav-links ${isMenuOpen ? 'mobile-open' : ''}`}>
+          <Link to="/" onClick={toggleMenu}>Shop</Link>
+          <a href="/#categories" onClick={toggleMenu}>Categories</a>
+          <a href="#" onClick={toggleMenu}>Track order</a>
+          <a href="#" onClick={toggleMenu}>For businesses</a>
         </nav>
 
         <div className="nav-right">
@@ -30,8 +33,8 @@ const Navbar = () => {
             <ShoppingCart size={24} />
             {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
           </Link>
-          <button className="mobile-menu-btn" aria-label="Menu">
-            <Menu size={24} />
+          <button className="mobile-menu-btn" aria-label="Menu" onClick={toggleMenu}>
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>

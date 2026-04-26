@@ -36,10 +36,35 @@
   display: none;
 }
 
+.nav-links.mobile-open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--border-color);
+  gap: 1.5rem;
+  z-index: 1001;
+}
+
 @media (min-width: 768px) {
   .nav-links {
     display: flex;
     gap: 2rem;
+  }
+  .nav-links.mobile-open {
+    position: static;
+    flex-direction: row;
+    width: auto;
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
+    border-bottom: none;
+    z-index: auto;
   }
 }
 
